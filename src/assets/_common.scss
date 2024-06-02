@@ -1,0 +1,135 @@
+// ! Common CSS
+$color-violet: #705df2;
+
+$color-success: #74e291;
+
+$color-blue-gray: #124076;
+
+$color-blue: #387adf;
+
+$color-orange: #fba834;
+
+$color-orange-low: #ffc374;
+
+$color-red-low: #ff8080;
+
+$color-green-low: #cdfadb;
+
+$color-blue-high: #35374b;
+
+$color-gray-low: #afafaf;
+
+$color-orange-low: #ffe4c9;
+
+$color-bg-website: #ebeff5;
+
+$color-pink: #ba68c8;
+
+//  ? breakpoints:
+
+$sm-ext: 376px;
+$sm: 500px;
+$md: 768px;
+$lg: 992px;
+$lg-desktop: 1200px;
+
+:root {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+// * ANİMATE KİT
+@keyframes AnimateBtn-1 {
+  0% {
+    left: 30px;
+    top: 10px;
+    transform: rotate(10deg);
+  }
+
+  50% {
+    left: 440px;
+    top: 220px;
+  }
+
+  100% {
+    left: 30px;
+    top: 10px;
+    transform: rotate(10deg);
+  }
+
+}
+
+@keyframes AnimateBtn-2 {
+  0%,
+  100% {
+    left: 30px;
+    top: 100px;
+    transform: rotate(4deg);
+  }
+
+  50% {
+    left: 490px;
+    top: 100px;
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes AnimateBtn-3 {
+  0%,
+  100% {
+    left: 50px;
+    top: 200px;
+    transform: rotate(-9deg);
+  }
+
+  50% {
+    left: 500px;
+    top: 10px;
+    transform: rotate(-9deg);
+  }
+}
+
+@keyframes AnimateBtn-4 {
+  0%,
+  100% {
+    right: 30px;
+    top: 10px;
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    right: 480px;
+    top: 200px;
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes AnimateBtn-5 {
+  0%,
+  100% {
+    right: 30px;
+    top: 100px;
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    right: 490px;
+    top: 100px;
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes AnimateBtn-6 {
+  0%,
+  100% {
+    right: 50px;
+    top: 200px;
+    transform: rotate(9deg);
+  }
+
+  50% {
+    right: 440px;
+    top: 10px;
+    transform: rotate(9deg);
+  }
+}

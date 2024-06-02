@@ -1,0 +1,160 @@
+// ! Header CSS
+@import "../../assets/common";
+
+body {
+  background-color: $color-bg-website;
+}
+
+#header {
+  width: 88%;
+  padding: 7px 60px;
+  background-color: $color-blue-gray;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  border-radius: 50px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    border-radius: 0;
+    transform: none;
+    top: 0;
+    padding: 7px 36px;
+    left: 0;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 436px) {
+    padding: 6px 18px;
+  }
+
+  .logo-part {
+    @media (max-width: $lg) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .logo-content {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        padding: 0;
+        color: #fff;
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+        font-weight: 500;
+
+        @media (max-width: 436px) {
+          font-size: 1.4rem;
+        }
+
+        span {
+          color: $color-green-low;
+          align-self: flex-end;
+        }
+      }
+
+      .icon {
+        display: block;
+
+        svg {
+          width: 45px;
+          height: 45px;
+
+          @media (max-width: 436px) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    .menu-mobile-icon {
+      display: none;
+      width: 25px;
+      overflow: hidden !important;
+      height: 20px;
+
+      @media (max-width: $lg) {
+        display: block;
+      }
+
+      span {
+        height: 2px;
+        background-color: $color-green-low;
+        border-radius: 50px;
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+        transition: 0.23s ease all;
+
+        &.active {
+          transform: translateX(7px);
+        }
+      }
+    }
+  }
+
+  .nav-part {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+
+    nav {
+      margin-right: 50px;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 6px;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        color: $color-green-low;
+        transition: 340ms all;
+
+        &:hover {
+          border-bottom: 1px solid teal;
+        }
+      }
+    }
+
+    button {
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      background-color: $color-orange;
+      box-shadow: 0px 1px 8.1px -1px $color-orange;
+      transition: 340ms all;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-blue-high;
+        font-weight: 500;
+        display: block;
+        padding: 9px 24px;
+        letter-spacing: 0.8px;
+        text-align: center;
+        font-family: font-euclid-medium;
+      }
+    }
+  }
+}

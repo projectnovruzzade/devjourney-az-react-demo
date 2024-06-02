@@ -1,0 +1,45 @@
+html {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style-type: none !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: font-euclid-regular;
+    src: url("../assets/fonts/Euclid_Circular_a_Regular.ttf");
+}
+
+@font-face {
+    font-family: font-euclid-medium;
+    src: url("../assets/fonts/Euclid_Circular_a_Medium.ttf");
+}
+
+@font-face {
+    font-family: font-euclid-bold;
+    src: url("../assets/fonts/Euclid_Circular_a_SemiBold.ttf");
+}
+
+@font-face {
+    font-family: font-oswald-medium;
+    src: url("../assets/fonts/Oswald_medium.ttf");
+}
+
+
+#all-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: font-euclid-medium;
+    height: 100vh;
+}
